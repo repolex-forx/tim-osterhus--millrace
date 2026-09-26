@@ -1,0 +1,110 @@
+[2026-09-26T07:06:15Z] === ENRICH ITERATION 5 START | repo=tim-osterhus/millrace sha=b699ffe3 ===
+[2026-09-26T07:06:15Z] [iter=5] PHASE START: enrich repo=tim-osterhus/millrace sha=b699ffe3 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/b699ffe3-enrich-iter-005.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/b699ffe3e7dd8a39dc5ce0ca149d469149609257.nq.gz
+[2026-09-26T07:06:15Z] [iter=5] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-26T07:07:47Z] [iter=5] AST store loaded triples=8832103 load_secs=88 mem_mb=1068 MB
+[2026-09-26T07:07:47Z] [iter=5] Step 2: Finding LSP targets mem_mb=1068 MB
+[2026-09-26T07:07:55Z] [iter=5] LSP targets found call_sites=59249 imports=4439 extends=194 implements=0 secs=8
+[2026-09-26T07:08:07Z] [iter=5] Loaded checkpoint partial graph triples=248035
+[2026-09-26T07:08:11Z] [iter=5] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1068 MB
+[2026-09-26T07:09:13Z] [iter=5] Position index built positions=609936 nodes_with_types=793353 secs=62 mem_mb=2069 MB
+[2026-09-26T07:09:13Z] [iter=5] Step 3: Starting LSP resolution mem_mb=2069 MB already_completed_types=[] already_completed_files=160
+[2026-09-26T07:09:13Z] [iter=5] Resolving target type target_type=call_site count=59249
+[2026-09-26T07:09:14Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=3.0 files_done=0 resolved=0 errors=0 current=src/millrace/contracts/runner.py
+[2026-09-26T07:18:41Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=12.4 files_done=1 resolved=135 errors=156 current=tests/cli/test_cli_dispatch_commands.py
+[2026-09-26T07:22:22Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=16.1 files_done=2 resolved=192 errors=217 current=tests/compiler/test_canonical_authority.py
+[2026-09-26T07:26:51Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=20.6 files_done=3 resolved=278 errors=291 current=src/millrace/adapters/cli/daemon_listener.py
+[2026-09-26T07:28:04Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=21.8 files_done=4 resolved=384 errors=311 current=src/millrace/adapters/cli/session_cancellation.py
+[2026-09-26T07:33:03Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=26.8 files_done=5 resolved=425 errors=394 current=tests/support/native_proof/process_case.py
+[2026-09-26T07:38:19Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=32.1 files_done=7 resolved=510 errors=481 current=src/millrace/substrate/_sqlite_schema.py
+[2026-09-26T07:39:43Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=33.5 files_done=8 resolved=528 errors=504 current=tests/compiler/test_workflow_package_dependency_closure.py
+[2026-09-26T07:44:35Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=38.3 files_done=9 resolved=541 errors=585 current=tests/compiler/test_operator_wait_authority.py
+[2026-09-26T07:49:17Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=43.0 files_done=10 resolved=566 errors=663 current=src/millrace/adapters/cli/graph_projection.py
+[2026-09-26T07:51:24Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=45.2 files_done=11 resolved=612 errors=698 current=tests/operator/test_status_projection.py
+[2026-09-26T07:55:38Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=49.4 files_done=12 resolved=695 errors=768 current=tests/kernel/test_queue_closure.py
+[2026-09-26T07:57:56Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=51.7 files_done=13 resolved=724 errors=806 current=src/millrace/adapters/cli/projections.py
+[2026-09-26T08:02:52Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=56.6 files_done=14 resolved=866 errors=887 current=tests/compiler/test_generic_fanout_compile.py
+[2026-09-26T08:05:53Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=59.6 files_done=15 resolved=885 errors=937 current=tests/compiler/test_kernel_ping_fingerprints.py
+[2026-09-26T08:11:23Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=65.1 files_done=16 resolved=931 errors=1028 current=src/millrace/operator/intake.py
+[2026-09-26T08:16:23Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=70.1 files_done=17 resolved=976 errors=1111 current=tests/release/test_verify_v022_distribution.py
+[2026-09-26T08:18:47Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=72.5 files_done=18 resolved=1141 errors=1150 current=src/millrace/adapters/cli/dispatch.py
+[2026-09-26T08:21:41Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=75.4 files_done=19 resolved=1173 errors=1198 current=src/millrace/contracts/runner_events.py
+[2026-09-26T08:24:21Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=78.1 files_done=21 resolved=1233 errors=1242 current=tests/kernel/test_kernel_ping_happy_path.py
+[2026-09-26T08:25:08Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=78.9 files_done=22 resolved=1234 errors=1255 current=tests/kernel/test_runner_session_validation.py
+[2026-09-26T08:25:40Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=79.4 files_done=23 resolved=1250 errors=1264 current=tests/cli/test_cli_output_contract.py
+[2026-09-26T08:27:58Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=81.7 files_done=24 resolved=1314 errors=1302 current=src/millrace/contracts/controls.py
+[2026-09-26T08:32:21Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=86.1 files_done=25 resolved=1354 errors=1375 current=tests/contracts/test_runner_session_contracts.py
+[2026-09-26T08:34:34Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=88.3 files_done=26 resolved=1381 errors=1412 current=tests/kernel/test_transition_inputs.py
+[2026-09-26T08:35:39Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=89.4 files_done=27 resolved=1422 errors=1430 current=src/millrace/adapters/cli/context.py
+[2026-09-26T08:39:53Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=93.6 files_done=28 resolved=1477 errors=1500 current=tests/kernel/test_run_controls.py
+[2026-09-26T08:45:18Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=99.0 files_done=30 resolved=1535 errors=1590 current=tests/kernel/test_recovery_cooldown_source_collision.py
+[2026-09-26T08:46:38Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=100.4 files_done=31 resolved=1563 errors=1612 current=tests/compiler/test_workflow_package_sources.py
+[2026-09-26T08:47:58Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=101.7 files_done=32 resolved=1614 errors=1634 current=tests/guardrails/test_lad_learning_compatibility_refusal.py
+[2026-09-26T08:48:50Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=102.6 files_done=34 resolved=1659 errors=1648 current=tests/support/run_controls.py
+[2026-09-26T08:50:17Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=104.0 files_done=36 resolved=1694 errors=1672 current=src/millrace/compiler/authority.py
+[2026-09-26T08:52:46Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=106.5 files_done=37 resolved=1754 errors=1713 current=src/millrace/operator/package_doctor.py
+[2026-09-26T08:56:13Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=110.0 files_done=38 resolved=1784 errors=1770 current=tests/support/generic_effect.py
+[2026-09-26T08:56:46Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=110.5 files_done=39 resolved=1792 errors=1779 current=tests/packaging/test_installed_workflow_package_import_parity.py
+[2026-09-26T08:58:42Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=112.5 files_done=40 resolved=1803 errors=1811 current=tests/packaging/test_workflow_package_archive_export.py
+[2026-09-26T08:59:52Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=113.6 files_done=41 resolved=1861 errors=1830 current=tests/kernel/test_taskmaster_observation_route.py
+[2026-09-26T09:01:47Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=115.5 files_done=42 resolved=1877 errors=1862 current=tests/kernel/test_transition_events_traces.py
+[2026-09-26T09:03:21Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=117.1 files_done=43 resolved=1889 errors=1888 current=src/millrace/operator/prompt_material.py
+[2026-09-26T09:04:23Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=118.1 files_done=44 resolved=1911 errors=1905 current=tests/support/generic_admission.py
+[2026-09-26T09:05:24Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=119.2 files_done=45 resolved=1942 errors=1922 current=tests/kernel/test_schema_projection.py
+[2026-09-26T09:06:29Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=120.2 files_done=46 resolved=1947 errors=1940 current=src/millrace/substrate/records.py
+[2026-09-26T09:11:31Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=125.3 files_done=48 resolved=2022 errors=2023 current=tests/operator/test_kp_0005_intake.py
+[2026-09-26T09:12:33Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=126.3 files_done=49 resolved=2027 errors=2040 current=tests/release/test_verify_v023_distribution.py
+[2026-09-26T09:14:11Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=127.9 files_done=51 resolved=2072 errors=2067 current=tests/cli/test_cli_workspace_commands.py
+[2026-09-26T09:16:00Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=129.7 files_done=52 resolved=2115 errors=2097 current=tests/kernel/test_runtime_owned_counter_threshold.py
+[2026-09-26T09:17:01Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=130.8 files_done=53 resolved=2160 errors=2114 current=src/millrace/adapters/cli/session_supervision.py
+[2026-09-26T09:19:30Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=133.2 files_done=54 resolved=2166 errors=2155 current=tests/e2e/test_actual_model_workflow_smoke.py
+[2026-09-26T09:25:36Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=139.3 files_done=55 resolved=2275 errors=2256 current=tests/packaging/test_installed_workflow_package_discovery.py
+[2026-09-26T09:29:00Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=142.7 files_done=56 resolved=2296 errors=2312 current=src/millrace/workflows/inventory.py
+[2026-09-26T09:30:19Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=144.1 files_done=58 resolved=2331 errors=2334 current=src/millrace/substrate/cas.py
+[2026-09-26T09:31:00Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=144.7 files_done=59 resolved=2348 errors=2345 current=src/millrace/kernel/runner_sessions.py
+[2026-09-26T09:32:27Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=146.2 files_done=60 resolved=2410 errors=2369 current=tests/compiler/test_kernel_ping_compile.py
+[2026-09-26T09:34:35Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=148.3 files_done=61 resolved=2455 errors=2404 current=tests/support/installed_workflow_packages.py
+[2026-09-26T09:36:02Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=149.8 files_done=62 resolved=2502 errors=2428 current=src/millrace/adapters/cli/workspace.py
+[2026-09-26T09:38:02Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=151.8 files_done=63 resolved=2515 errors=2461 current=tests/guardrails/test_forbidden_runtime_literals.py
+[2026-09-26T09:39:22Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=153.1 files_done=64 resolved=2592 errors=2483 current=src/millrace/adapters/cli/session_persistence.py
+[2026-09-26T09:40:17Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=154.0 files_done=65 resolved=2601 errors=2498 current=tests/substrate/_runtime_store_support.py
+[2026-09-26T09:41:04Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=154.8 files_done=66 resolved=2601 errors=2511 current=tests/operator/test_operator_wait.py
+[2026-09-26T09:42:06Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=155.8 files_done=68 resolved=2621 errors=2528 current=tests/cli/test_cli_package_commands.py
+[2026-09-26T09:44:52Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=158.6 files_done=69 resolved=2655 errors=2574 current=src/millrace/substrate/errors.py
+[2026-09-26T09:47:23Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=161.1 files_done=71 resolved=2665 errors=2616 current=tests/kernel/kernel_ping_scenarios.py
+[2026-09-26T09:48:28Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=162.2 files_done=72 resolved=2665 errors=2634 current=tests/guardrails/test_adapter_boundaries.py
+[2026-09-26T09:50:22Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=164.1 files_done=73 resolved=2788 errors=2665 current=src/millrace/adapters/cli/output.py
+[2026-09-26T09:50:55Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=164.7 files_done=74 resolved=2816 errors=2674 current=tests/compiler/test_terminal_action_conditions.py
+[2026-09-26T09:54:58Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=168.7 files_done=76 resolved=2885 errors=2741 current=src/millrace/kernel/projection.py
+[2026-09-26T09:57:09Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=170.9 files_done=77 resolved=2904 errors=2777 current=src/millrace/compiler/identity.py
+[2026-09-26T09:57:49Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=171.6 files_done=78 resolved=2923 errors=2788 current=tests/cli/test_cli_graph_relationships.py
+[2026-09-26T09:59:30Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=173.2 files_done=80 resolved=2964 errors=2816 current=tests/compiler/test_runtime_owned_counter_threshold.py
+[2026-09-26T10:01:12Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=174.9 files_done=81 resolved=2990 errors=2844 current=src/millrace/testing/fakes.py
+[2026-09-26T10:02:17Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=176.0 files_done=82 resolved=3021 errors=2862 current=src/millrace/adapters/cli/history_projection.py
+[2026-09-26T10:03:19Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=177.1 files_done=83 resolved=3057 errors=2879 current=tests/contracts/test_transition_context.py
+[2026-09-26T10:05:19Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=179.1 files_done=87 resolved=3096 errors=2912 current=tests/support/kernel_ping.py
+[2026-09-26T10:06:39Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=180.4 files_done=89 resolved=3131 errors=2934 current=src/millrace/contracts/ids.py
+[2026-09-26T10:07:37Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=181.4 files_done=92 resolved=3196 errors=2950 current=tests/packaging/test_public_package_surface.py
+[2026-09-26T10:08:40Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=182.4 files_done=93 resolved=3270 errors=2967 current=tests/operator/test_workflow_package_status_projection.py
+[2026-09-26T10:11:41Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=185.4 files_done=94 resolved=3277 errors=3017 current=src/millrace/substrate/_workflow_package_command_audit.py
+[2026-09-26T10:15:44Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=189.5 files_done=95 resolved=3284 errors=3084 current=tests/cli/test_cli_daemon_process.py
+[2026-09-26T10:16:25Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=190.2 files_done=98 resolved=3327 errors=3095 current=src/millrace/contracts/selected_plan_lookups.py
+[2026-09-26T10:16:57Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=190.7 files_done=99 resolved=3340 errors=3104 current=tests/kernel/test_workflow_package_active_pinning.py
+[2026-09-26T10:18:57Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=192.7 files_done=100 resolved=3347 errors=3137 current=tests/kernel/test_effect_admission.py
+[2026-09-26T10:19:56Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=193.7 files_done=102 resolved=3367 errors=3153 current=tests/cli/test_cli_entrypoint.py
+[2026-09-26T10:20:32Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=194.3 files_done=103 resolved=3393 errors=3163 current=tests/adapters/test_context_checkout_closed_artifact.py
+[2026-09-26T10:21:20Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=195.1 files_done=104 resolved=3423 errors=3176 current=src/millrace/compiler/diagnostics.py
+[2026-09-26T10:22:03Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=195.8 files_done=105 resolved=3423 errors=3188 current=src/millrace/compiler/source.py
+[2026-09-26T10:22:36Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=196.3 files_done=107 resolved=3450 errors=3197 current=tests/contracts/test_protocol_kinds.py
+[2026-09-26T10:24:17Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=198.0 files_done=109 resolved=3464 errors=3225 current=tests/conftest.py
+[2026-09-26T10:25:23Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=199.1 files_done=113 resolved=3492 errors=3243 current=tests/workflows/test_inventory.py
+[2026-09-26T10:26:00Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=199.7 files_done=118 resolved=3549 errors=3253 current=src/millrace/compiler/schemas.py
+[2026-09-26T10:26:50Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=200.6 files_done=120 resolved=3559 errors=3267 current=src/millrace/contracts/public_projections.py
+[2026-09-26T10:27:09Z] [iter=5] Target type resolved target_type=call_site resolved=3575 errors=3272 secs=11876 mem_mb=2127 MB
+[2026-09-26T10:27:09Z] [iter=5] Resolving target type target_type=import_statement count=4439
+[2026-09-26T10:27:15Z] [iter=5] Target type resolved target_type=import_statement resolved=640 errors=0 secs=6 mem_mb=2128 MB
+[2026-09-26T10:27:15Z] [iter=5] Resolving target type target_type=extends_clause count=194
+[2026-09-26T10:27:17Z] [iter=5] Target type resolved target_type=extends_clause resolved=62 errors=0 secs=2 mem_mb=2128 MB
+[2026-09-26T10:27:50Z] [iter=5] Step 5: Writing final enrichment file triples=426895
+[2026-09-26T10:27:55Z] [iter=5] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/b699ffe3e7dd8a39dc5ce0ca149d469149609257.nq.gz size_kb=10709
+[2026-09-26T10:27:55Z] [iter=5] Checkpoint cleared (enrichment complete)
+[2026-09-26T10:27:55Z] [iter=5] PHASE END: enrich elapsed_s=12100 elapsed_min=201.7 total_triples=426895
